@@ -1,8 +1,5 @@
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStreamReader;
+import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Locale;
 
@@ -21,9 +18,18 @@ public class DateAndTime {
     }
   }
 
+  class Result2 {
+
+    public static String findDay(int month, int day, int year) {
+      LocalDate date = LocalDate.of(year, month, day);
+      return date.getDayOfWeek().name();
+    }
+    
+  }
+
   public static void main(String[] args) throws IOException {
 
-    String res = Result.findDay(8, 5, 2015);
+    String res = Result2.findDay(8, 5, 2015);
 
     System.out.println(res);
   }
