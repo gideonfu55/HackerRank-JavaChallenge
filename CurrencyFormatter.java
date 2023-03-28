@@ -5,8 +5,8 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class CurrencyFormatter {
-  
-  public static void main(String[] args) {
+
+    public static void main(String[] args) {
 
     Scanner scanner = new Scanner(System.in);
     double payment = scanner.nextDouble();
@@ -24,6 +24,7 @@ public class CurrencyFormatter {
     System.out.println("India: " + india);
     System.out.println("China: " + china);
     System.out.println("France: " + france);
+  
   }
 
 }
