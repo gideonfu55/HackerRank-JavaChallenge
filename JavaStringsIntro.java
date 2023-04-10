@@ -46,20 +46,30 @@ public class JavaStringsIntro {
     Scanner scan = new Scanner(System.in);
     String A = scan.next();
     String B = scan.next();
-    System.out.println("/n");
+    System.out.println("\n");
     /* Enter your code here. Print output to STDOUT. */
     // Operation 1:
     System.out.println(A.length() + B.length());
 
-    // Operation 2:
+    // Operation 2 & 3:
     if (A.compareTo(B) > 0) {
+
       System.out.println("Yes");
-      System.out.println(Character.toUpperCase(B.charAt(0)) + B.substring(1) + " " + Character.toUpperCase(A.charAt(0))
-          + A.substring(1));
-    } else {
+      System.out.println(Character.toUpperCase(A.charAt(0)) + A.substring(1) + " " + Character.toUpperCase(B.charAt(0))
+          + B.substring(1));
+
+    } else if (A.compareTo(B) == 0) {
+
       System.out.println("No");
       System.out.println(Character.toUpperCase(A.charAt(0)) + A.substring(1) + " " + Character.toUpperCase(B.charAt(0))
           + B.substring(1));
+
+    } else {
+
+      System.out.println("No");
+      System.out.println(Character.toUpperCase(A.charAt(0)) + A.substring(1) + " " + Character.toUpperCase(B.charAt(0))
+          + B.substring(1));
+
     }
 
     scan.close();
