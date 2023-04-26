@@ -5,13 +5,17 @@ public class StringAnagram {
     System.out.println(anagramOrNot(isAnagram("anagramm", "marganaa")));
     System.out.println(anagramOrNot(isAnagram("Hello", "hello")));
     System.out.println(anagramOrNot(isAnagram("Hello", "ello")));
-    System.out.println(anagramOrNot(isAnagram("Hello", "ello")));
     System.out.println(anagramOrNot(isAnagram("JavaChampion", "chainjavapom")));
-    System.out.println(anagramOrNot(isAnagram("javachampion", "chipJavanoma")));
+    System.out.println(anagramOrNot(isAnagram("abcdbcda", "bbccddaaxyz")));
+    System.out.println(anagramOrNot(isAnagram("ab", "abXY")));
     
   }
 
   static boolean isAnagram(String a, String b) {
+
+    if (a.length() != b.length()) {
+      return false;
+    }
 
     char[] arrayA= a.toLowerCase().toCharArray();
     char[] arrayB = b.toLowerCase().toCharArray();
