@@ -6,6 +6,7 @@ public class StringAnagram {
     System.out.println(anagramOrNot(isAnagram("Hello", "hello")));
     System.out.println(anagramOrNot(isAnagram("Hello", "ello")));
     System.out.println(anagramOrNot(isAnagram("JavaChampion", "chainjavapom")));
+    System.out.println(anagramOrNot(isAnagram("javaChaMpioN", "avianMachopJ")));
     System.out.println(anagramOrNot(isAnagram("abcdbcda", "bbccddaaxyz")));
     System.out.println(anagramOrNot(isAnagram("ab", "abXY")));
     
